@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto&display=swap');
+
+body {
+    background-color: #FB6B6B;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.content {
+    height: 450px;
+    width: 400px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    margin: 30px 78px;
+    width: 100px;
+    height: 122px;
+}
+
+.content p {
+    margin: 6px 42px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+
+.content .button {
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 246px;
+    height: 54px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 14px 0;
+}
+
+.content .button span {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D70900;
+    
+}
