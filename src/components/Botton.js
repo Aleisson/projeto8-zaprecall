@@ -3,7 +3,7 @@ import sad from "./img/sad.png"
 
 function Botton({ contPerguntas = 0, respPergunta = 8, icons, home}) {
 
-    let confirma = "";
+    let confirma = true;
     let button = "";
 
     for (let i = 0; i < icons.length; i++) {
