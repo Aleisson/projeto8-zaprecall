@@ -17,11 +17,11 @@ function Perguntas() {
         { questao: "Usamos estado (state) para __? ", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" },
     ];
 
-    perguntas.sort(() => Math.random() - 0.5);
+    // perguntas.sort(() => Math.random() - 0.5);
 
-    // function addFlip(indice){
+    //  function addFlip(indice){
 
-    //    setPergDom(pergDom.map((x,i) =>{ if(i === indice) })) 
+    //    setPergDom(pergDom.map((x,i) =>{ if(i === indice){return x} else{ return x} })) 
     // }
 
 
@@ -30,7 +30,7 @@ function Perguntas() {
     return (
         <div class="perguntas">
             <p><img src={logo} alt="logo"></img> ZapRecall</p>
-            <DeckFlip />
+            <DeckFlip questao={perguntas[0].questao} resposta={perguntas[0].resposta}/>
             {pergDom}
         </div>
     );

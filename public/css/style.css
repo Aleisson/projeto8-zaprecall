@@ -110,18 +110,17 @@ body {
 }
 
 .deckFlip {
-    width: 299px;
-    height: 131px;
+    width: 300px;
+    height: 140px;
     position: relative;
     margin-top: 12px;
 }
 
-.front-face,
-.back-face>p {
+.front-face > p {
     font-size: 26px;
 }
 
-.back-face>p {
+.back-face > p {
     font-size: 20px;
 }
 
@@ -132,12 +131,13 @@ body {
 }
 
 .face {
-    width: 299px;
-    height: 131px;
+    width: 300px;
+    height: 140px;
     background-color: #FFFFD4;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     word-break: break-all;
+    text-align: justify;
     padding: 10px 10px;
     margin-bottom: 10px;
     position: absolute;
@@ -149,6 +149,9 @@ body {
 
 .back-face {
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .virada .back-face {
@@ -162,7 +165,6 @@ body {
 .back-face>div {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
 }
 
 .back-face>div div {
