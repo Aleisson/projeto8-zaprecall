@@ -8,9 +8,9 @@ Descrição:
 - Conjuntos de *flashcards* são chamados de *decks.* Este app deverá possuir por padrão pelo menos um *deck* com 8 *flashcards*.
 
 link projeto notion:
-https://bootcampra.notion.site/Projeto-07-Instagram-React-5a27784dc20f4ef88f74b7e11c8cd0c1
+https://bootcampra.notion.site/Projeto-08-ZapRecall-c5e587a669fd441c8e18ed48e54129eb
 link design:
-Obs: Design fornecido pela Driven
+https://www.figma.com/file/pjJ1oBmEIW1qHICjeGoiNc/ZapRecall-(Proposta-T5---ampliado)?node-id=0%3A1
 
 Repositório: https://github.com/Aleisson/projeto8-zaprecall
 
