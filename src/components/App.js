@@ -16,7 +16,7 @@ function App() {
     return (
     
         <div class="content">
-            {<Perguntas />}
+            {page}
         </div>
     
     );
