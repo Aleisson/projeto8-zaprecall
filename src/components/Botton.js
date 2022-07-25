@@ -1,17 +1,16 @@
 import party from "./img/party.png"
 import sad from "./img/sad.png"
 
+import App from "./App";
 function Botton({ contPerguntas = 0, respPergunta = 8, icons }) {
 
     let confirma = "";
+    let button = "";
 
     for (let i = 0; i < icons.length; i++) {
         if (icons[i] === "close-circle") {
             confirma = false;
-        } else {
-            confirma = true;
-        }
-
+        } 
     }
 
     let textFinal = "";
@@ -20,12 +19,14 @@ function Botton({ contPerguntas = 0, respPergunta = 8, icons }) {
             <div><img src={party} alt="logo"></img><span>Parabéns</span></div>
             <p>Você não esqueceu de <br /> nenhum flashcard!</p>
         </div>;
+        button =<div className="button-botton" onClick={() => }><p>REINICIAR RECALL</p></div>;
     } else if (contPerguntas === respPergunta) {
         textFinal = <div>
             <div><img src={sad} alt="logo"></img><span>Putz...</span></div>
             <p>Ainda faltam alguns...<br />
                 Mas não desanime!</p>
-        </div>
+        </div>;
+        button=<div className="button-botton" onClick={() => <Home />}><p>REINICIAR RECALL</p></div>;
     }
 
 
@@ -44,6 +45,9 @@ function Botton({ contPerguntas = 0, respPergunta = 8, icons }) {
             <div className="icons">
                 {icons.map(x => <ion-icon name={x}></ion-icon>)}
             </div>
+
+            {button}
+
         </div>
     )
 

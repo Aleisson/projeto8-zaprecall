@@ -8,7 +8,7 @@ function App() {
     const [page,setpage] = React.useState(<Home nextPergunta1={nextPergunta1}/>)
 
     function nextPergunta1(){
-        setpage(<Perguntas />)
+        setpage(<Perguntas setpage={setpage}/>)
     }
 
     
