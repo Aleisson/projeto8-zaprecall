@@ -1,7 +1,7 @@
 
-function DeckDisable({indice, cor}){
+function DeckDisable({indice, icon}){
 
-    let nameIcon = "";
+    let nameIcon = icon;
     // cor ="red-icon"; 
     // <ion-icon name="close-circle"></ion-icon>
     // cor ="yellow-icon"; 
@@ -9,14 +9,10 @@ function DeckDisable({indice, cor}){
     // cor ="green-icon"; 
     // <ion-icon name="checkmark-circle"></ion-icon>
 
-    if(cor === "red-icon" ){nameIcon = "close-circle"}
-    if(cor === "yellow-icon" ){nameIcon = "alert-circle"}
-    if(cor === "green-icon" ){nameIcon = "checkmark-circle"}
-
-
+    
 
     return(
-        <div className = {"deckInicio "+ cor} >
+        <div className = {"deckInicio "+ icon} >
         <p>{"Pergunta " + (indice + 1)} </p>
         <ion-icon name={nameIcon}></ion-icon>
 

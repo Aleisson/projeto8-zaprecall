@@ -15,9 +15,9 @@ function DeckFlip({indice,questao, resposta, finalDeck}) {
             <div className="back-face face">
                 <p>{resposta}</p>
                 <div>
-                    <div onClick={() => finalDeck(indice,"red-icon")}    className="red"><p>Não<br/>lembrei</p></div>
-                    <div onClick={() => finalDeck(indice,"yellow-icon")} className="yellow"><p>Quase não<br/>lembrei</p></div>
-                    <div onClick={() => finalDeck(indice,"green-icon")}  className="green"><p>Zap!</p></div>
+                    <div onClick={() => finalDeck(indice,"close-circle")}    className="red"><p>Não<br/>lembrei</p></div>
+                    <div onClick={() => finalDeck(indice,"alert-circle")} className="yellow"><p>Quase não<br/>lembrei</p></div>
+                    <div onClick={() => finalDeck(indice,"checkmark-circle")}  className="green"><p>Zap!</p></div>
                 </div>
             </div>
         </div>
