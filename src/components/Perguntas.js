@@ -19,6 +19,10 @@ function Perguntas() {
 
     perguntas.sort(() => Math.random() - 0.5);
 
+    // function addFlip(indice){
+
+    //    setPergDom(pergDom.map((x,i) =>{ if(i === indice) })) 
+    // }
 
 
     const [pergDom, setPergDom] = React.useState(perguntas.map((x,i) => <PerguntaInicial indice={i}/>))
@@ -26,7 +30,6 @@ function Perguntas() {
     return (
         <div class="perguntas">
             <p><img src={logo} alt="logo"></img> ZapRecall</p>
-            <DeckFlip />
             <DeckFlip />
             {pergDom}
         </div>

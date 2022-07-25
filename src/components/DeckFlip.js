@@ -1,11 +1,16 @@
-
+import React from "react";
 function DeckFlip() {
+    
+    const[vira,setVira] = React.useState("deckFlip");
+
+  
+
     return (
 
-        <div className="deckFlip virada">
+        <div className={vira} onClick={() => setVira("deckFlip virada")}>
             <div className="front-face face">
                 <p>O que é JSX?</p>
-                <ion-icon name="repeat-outline"></ion-icon>
+                <ion-icon  name="repeat-outline"></ion-icon>
             </div>
             <div className="back-face face">
                 <p>JSX é uma sintaxe para escrever HTML dentro do JS</p>
