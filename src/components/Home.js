@@ -1,14 +1,14 @@
 import ImgLogo from "./img/logo.png"
 
 
-function Home() {
+function Home({nextPergunta1}) {
 
     
     return (
-        <div class="home">
+        <div class="pergunta">
             <img src={ImgLogo} alt="logo"/>
             <p>ZapRecall</p>
-            <div onClick={() => alert()} class ="button"><span>Iniciar Recall!!</span></div>
+            <div onClick={() => nextPergunta1()} class ="button"><span>Iniciar Recall!!</span></div>
         </div>
     );
 
