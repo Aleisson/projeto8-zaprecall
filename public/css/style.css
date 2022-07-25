@@ -12,10 +12,12 @@ body {
 }
 
 
+
+
 .content {
-    height: 450px;
+    height: 100%;
     width: 400px;
-    margin: 80px auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,4 +194,34 @@ body {
 .green {
     background-color: #2FBE34;
     
+}
+
+.red-icon p{
+    color: #FF3030;
+    text-decoration:line-through;
+    
+}
+
+.green-icon p{
+    color: #2FBE34;
+    text-decoration:line-through;
+    
+}
+
+.yellow-icon p{
+    color: #FF922E;
+    text-decoration:line-through;
+    
+}
+
+ion-icon[name="close-circle"]{
+    color: #FF3030;
+}
+
+ion-icon[name="alert-circle"]{
+    color:#FF922E;
+}
+
+ion-icon[name="checkmark-circle"]{
+    color: #2FBE34;
 }

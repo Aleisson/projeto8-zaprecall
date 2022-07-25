@@ -1,5 +1,5 @@
 import React from "react";
-function DeckFlip({questao, resposta}) {
+function DeckFlip({indice,questao, resposta, finalDeck}) {
     
     const[vira,setVira] = React.useState("deckFlip");
 
@@ -15,9 +15,9 @@ function DeckFlip({questao, resposta}) {
             <div className="back-face face">
                 <p>{resposta}</p>
                 <div>
-                    <div className="red"><p>Não<br/>lembrei</p></div>
-                    <div className="yellow"><p>Quase não<br/>lembrei</p></div>
-                    <div className="green"><p>Zap!</p></div>
+                    <div onClick={() => finalDeck(indice,"red-icon")}    className="red"><p>Não<br/>lembrei</p></div>
+                    <div onClick={() => finalDeck(indice,"yellow-icon")} className="yellow"><p>Quase não<br/>lembrei</p></div>
+                    <div onClick={() => finalDeck(indice,"green-icon")}  className="green"><p>Zap!</p></div>
                 </div>
             </div>
         </div>
