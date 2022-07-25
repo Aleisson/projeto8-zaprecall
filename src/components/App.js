@@ -5,12 +5,15 @@ import Perguntas from "./Perguntas";
 function App() {
 
     // const [cont, setCont] = React.useState(0);
-    const [page,setpage] = React.useState(<Home nextPergunta1={nextPergunta1}/>)
+    const [page,setpage] = React.useState(<Home next={next}/>)
 
-    function nextPergunta1(){
-        setpage(<Perguntas setpage={setpage}/>)
+    function next(){
+        setpage(<Perguntas home={home}/>)
     }
 
+    function home(){
+        setpage(<Home next={next}/>)
+    }
     
 
     return (

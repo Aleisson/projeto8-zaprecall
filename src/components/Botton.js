@@ -1,8 +1,7 @@
 import party from "./img/party.png"
 import sad from "./img/sad.png"
 
-import App from "./App";
-function Botton({ contPerguntas = 0, respPergunta = 8, icons }) {
+function Botton({ contPerguntas = 0, respPergunta = 8, icons, home}) {
 
     let confirma = "";
     let button = "";
@@ -11,6 +10,7 @@ function Botton({ contPerguntas = 0, respPergunta = 8, icons }) {
         if (icons[i] === "close-circle") {
             confirma = false;
         } 
+
     }
 
     let textFinal = "";
@@ -19,14 +19,14 @@ function Botton({ contPerguntas = 0, respPergunta = 8, icons }) {
             <div><img src={party} alt="logo"></img><span>Parabéns</span></div>
             <p>Você não esqueceu de <br /> nenhum flashcard!</p>
         </div>;
-        button =<div className="button-botton" onClick={() => }><p>REINICIAR RECALL</p></div>;
+        button =<div className="button-botton" onClick={() => home()}><p>REINICIAR RECALL</p></div>;
     } else if (contPerguntas === respPergunta) {
         textFinal = <div>
             <div><img src={sad} alt="logo"></img><span>Putz...</span></div>
             <p>Ainda faltam alguns...<br />
                 Mas não desanime!</p>
         </div>;
-        button=<div className="button-botton" onClick={() => <Home />}><p>REINICIAR RECALL</p></div>;
+        button=<div className="button-botton" onClick={() => home()}><p>REINICIAR RECALL</p></div>;
     }
 
 

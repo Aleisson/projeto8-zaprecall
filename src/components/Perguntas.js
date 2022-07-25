@@ -5,7 +5,7 @@ import React from "react";
 import DeckDisable from "./DeckDesable";
 import Botton from "./Botton";
 
-function Perguntas() {
+function Perguntas({home}) {
     
     const [perguntas, setPerguntas] = React.useState([
         { tipo: 1, icon:"" ,questao: "O que é JSX? ", resposta: "Uma extensão de linguagem do JavaScript" },
@@ -58,7 +58,7 @@ function Perguntas() {
                 }
             })}
             
-            <Botton contPerguntas={contPerguntas} respPergunta={perguntas.length} icons={contIcon} />
+            <Botton contPerguntas={contPerguntas} respPergunta={perguntas.length} icons={contIcon} home={home}/>
         </div>
     );
 
