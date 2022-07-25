@@ -1,8 +1,8 @@
 
-function PerguntaInicial({indice, valor}){
+function PerguntaInicial({indice, changeDeck}){
 
     return(
-        <div class="deckInicio">
+        <div class="deckInicio"  onClick={() => changeDeck(indice)}>
         <p>{"Pergunta " + (indice + 1)} </p>
         <ion-icon name="play-outline"></ion-icon>
         </div>

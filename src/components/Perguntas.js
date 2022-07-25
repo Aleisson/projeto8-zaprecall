@@ -6,32 +6,40 @@ import React from "react";
 
 function Perguntas() {
 
-    const perguntas = [
-        { questao: "O que é JSX? ", resposta: "Uma extensão de linguagem do JavaScript" },
-        { questao: "O React é __? ", resposta: "uma biblioteca JavaScript para construção de interfaces" },
-        { questao: "Componentes devem iniciar com __ ", resposta: "letra maiúscula" },
-        { questao: " Podemos colocar __ dentro do JSX? ", resposta: " expressões" },
-        { questao: "O ReactDOM nos ajuda __? ", resposta: "interagindo com a DOM para colocar componentes React na mesma" },
-        { questao: " Usamos o npm para __?", resposta: "gerenciar os pacotes necessários e suas dependências" },
-        { questao: "Usamos props para __? ", resposta: "passar diferentes informações para componentes" },
-        { questao: "Usamos estado (state) para __? ", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" },
-    ];
+    const [perguntas, setPerguntas] = React.useState([
+        { tipo: 1, questao: "O que é JSX? ", resposta: "Uma extensão de linguagem do JavaScript" },
+        { tipo: 1, questao: "O React é __? ", resposta: "uma biblioteca JavaScript para construção de interfaces" },
+        { tipo: 1, questao: "Componentes devem iniciar com __ ", resposta: "letra maiúscula" },
+        { tipo: 1, questao: " Podemos colocar __ dentro do JSX? ", resposta: " expressões" },
+        { tipo: 1, questao: "O ReactDOM nos ajuda __? ", resposta: "interagindo com a DOM para colocar componentes React na mesma" },
+        { tipo: 1, questao: " Usamos o npm para __?", resposta: "gerenciar os pacotes necessários e suas dependências" },
+        { tipo: 1, questao: "Usamos props para __? ", resposta: "passar diferentes informações para componentes" },
+        { tipo: 1, questao: "Usamos estado (state) para __? ", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" },
+    ].sort(() => Math.random() - 0.5));
 
-    // perguntas.sort(() => Math.random() - 0.5);
+    
 
-    //  function addFlip(indice){
+    function changeDeck(indice) {
+        
+        perguntas[indice].tipo = 2;
+        
+        setPerguntas(perguntas.map(x => x))
 
-    //    setPergDom(pergDom.map((x,i) =>{ if(i === indice){return x} else{ return x} })) 
-    // }
+    }
 
 
-    const [pergDom, setPergDom] = React.useState(perguntas.map((x,i) => <PerguntaInicial indice={i}/>))
+
 
     return (
         <div class="perguntas">
             <p><img src={logo} alt="logo"></img> ZapRecall</p>
-            <DeckFlip questao={perguntas[0].questao} resposta={perguntas[0].resposta}/>
-            {pergDom}
+            {perguntas.map((x, i) => {
+                if (x.tipo === 1) {
+                    return <PerguntaInicial indice={i} changeDeck={changeDeck} />
+                } else {
+                    return <DeckFlip questao={x.questao} resposta={x.resposta}/>;
+                }
+            })}
         </div>
     );
 
