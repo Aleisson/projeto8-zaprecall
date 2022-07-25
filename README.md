@@ -12,9 +12,9 @@ https://bootcampra.notion.site/Projeto-07-Instagram-React-5a27784dc20f4ef88f74b7
 link design:
 Obs: Design fornecido pela Driven
 
-Repositório: https://github.com/Aleisson/projeto7-instagramreact
+Repositório: https://github.com/Aleisson/projeto8-zaprecall
 
-Deploy projeto: https://aleisson.github.io/projeto7-instagramreact/
+Deploy projeto:#
 
 
 Tutor: Ernesto Junior da Turma 7 do grupo 2 - (Vulgo a melhor turma) - Driven.
