@@ -14,7 +14,7 @@ Obs: Design fornecido pela Driven
 
 Repositório: https://github.com/Aleisson/projeto8-zaprecall
 
-Deploy projeto:#
+Deploy projeto:https://projeto8-zaprecall-neon-ten.vercel.app/
 
 
 Tutor: Ernesto Junior da Turma 7 do grupo 2 - (Vulgo a melhor turma) - Driven.
